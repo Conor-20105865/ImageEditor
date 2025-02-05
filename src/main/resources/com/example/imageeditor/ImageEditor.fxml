@@ -13,11 +13,10 @@
     <children>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
-                <ColorPicker fx:id="colorPicker" layoutX="510.0" layoutY="3.0" />
                 <ImageView fx:id="imageView" fitHeight="247.0" fitWidth="320.0" layoutX="178.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
-                <Slider fx:id="redSlider" layoutX="16.0" layoutY="107.0" min="0" max="255" value="128" />
-                <Slider fx:id="greenSlider" layoutX="16.0" layoutY="147.0" min="0" max="255" value="128" />
-                <Slider fx:id="blueSlider" layoutX="16.0" layoutY="192.0" min="0" max="255" value="128" />
+                <Slider fx:id="redSlider" layoutX="16.0" layoutY="107.0" min="0" max="2" value="1" onMouseReleased="#changeColorChannels" />
+                <Slider fx:id="greenSlider" layoutX="16.0" layoutY="147.0" min="0" max="2" value="1" onMouseReleased="#changeColorChannels"/>
+                <Slider fx:id="blueSlider" layoutX="16.0" layoutY="192.0" min="0" max="2" value="1" onMouseReleased="#changeColorChannels" />
                 <Button fx:id="exitButton" layoutY="374.0" mnemonicParsing="false" text="Exit" onAction="#handleExit" />
                 <Label layoutX="26.0" layoutY="90.0" text="Red" />
                 <Label layoutX="29.0" layoutY="130.0" text="Green" />
