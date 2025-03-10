@@ -1,9 +1,9 @@
 # Current Features:
                     Add an image
                     Greyscale image
+                    Adjust RGB values
 
 
 # Upcoming Features:
-                    Adjust RGB values
                     Display image properties
                     
