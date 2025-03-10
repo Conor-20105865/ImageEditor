@@ -13,16 +13,27 @@
     <children>
         <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
             <children>
+
+                
                 <ImageView fx:id="imageView" fitHeight="247.0" fitWidth="320.0" layoutX="178.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true" />
+
+                <!-- Sliders  -->
                 <Slider fx:id="redSlider" layoutX="16.0" layoutY="107.0" min="0" max="2" value="1" onMouseReleased="#changeColorChannels" />
                 <Slider fx:id="greenSlider" layoutX="16.0" layoutY="147.0" min="0" max="2" value="1" onMouseReleased="#changeColorChannels"/>
                 <Slider fx:id="blueSlider" layoutX="16.0" layoutY="192.0" min="0" max="2" value="1" onMouseReleased="#changeColorChannels" />
+
+                <!-- Buttons -->
                 <Button fx:id="exitButton" layoutY="374.0" mnemonicParsing="false" text="Exit" onAction="#handleExit" />
+                <Button fx:id="addImageButton" layoutX="2.0" layoutY="4.0" mnemonicParsing="false" text="Add Image" onAction="#handleAddImage" />
+
+                <!-- Slider Labels -->
                 <Label layoutX="26.0" layoutY="90.0" text="Red" />
                 <Label layoutX="29.0" layoutY="130.0" text="Green" />
                 <Label layoutX="29.0" layoutY="175.0" text="Blue" />
+
+                <!-- Checkboxes -->
                 <CheckBox onAction="#handleGreyscaleToggle" fx:id="greyscaleCheckBox" layoutX="13.0" layoutY="60.0" mnemonicParsing="false" text="Greyscale" />
-                <Button fx:id="addImageButton" layoutX="2.0" layoutY="4.0" mnemonicParsing="false" text="Add Image" onAction="#handleAddImage" />
+
             </children>
         </AnchorPane>
     </children>
