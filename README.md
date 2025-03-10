@@ -1,7 +1,8 @@
 # Simple Image Editor
 
 A lightweight and easy-to-use image editor that allows you to manipulate images with basic features like greyscaling and adjusting RGB values.
-Current Features:
+
+# Current Features:
 
     Add an Image: Load an image to be edited.
     Greyscale Image: Convert the image to greyscale.
